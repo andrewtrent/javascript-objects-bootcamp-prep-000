@@ -1,9 +1,9 @@
 var playlist = {'Kanye West':"Black Skinhead"};
-function updatePlaylist(playlistObject,artist,title){
-  Object.assign(playlistObject, {artist: title})
-  return playlistObject
+function updatePlaylist(playlist,artist,title){
+  Object.assign(playlist, {artist: title})
+  return playlist
 }
-function removeFromPlaylist(playlistObject, artist){
-  delete playlistObject.artist
-  return playlistObject
+function removeFromPlaylist(playlist, artist){
+  delete playlist.artist
+  return playlist
 }
